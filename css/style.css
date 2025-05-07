@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  header .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    animation: slideUp 1s ease both;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+    color: #0077cc;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .section ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0077cc;
+    color: white;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    header.hero {
+      height: 80vh;
+      padding: 20px;
+    }
+  
+    .content h1 {
+      font-size: 28px;
+    }
+  
+    .content p {
+      font-size: 16px;
+    }
+  
+    .section {
+      padding: 40px 15px;
+      margin: 20px 10px;
+    }
+  
+    .skills-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 22px;
+    }
+  
+    .content p {
+      font-size: 14px;
+    }
+  
+    .section h2 {
+      font-size: 18px;
+    }
+  
+    .section ul li {
+      font-size: 14px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  }
+  
