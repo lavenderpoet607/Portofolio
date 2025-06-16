@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <title>Portofolio Ridho | Backend Developer</title>
   <link rel="stylesheet" href="../css/style.css" />
-  <!-- Fontawesome CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -24,20 +23,18 @@
         <li><a href="#home">Beranda</a></li>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#projects">Proyek</a></li>
         <li><a href="#services">Layanan</a></li>
         <li><a href="#contact">Kontak</a></li>
-        <div class="cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
+        <div class="cancel-btn"><i class="fas fa-times"></i></div>
       </ul>
       <div class="media-icons">
         <a href="https://www.facebook.com/ridho.tawang.3?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/sbngsampemerauke?igsh=MWVuM25lM3MyamwwdA=="><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
   </nav>
 
   <!-- Beranda -->
@@ -90,36 +87,73 @@
           </p>
           <div class="experience">
             <div class="num">5</div>
-            <div class="exp">
-              Tahun <br />
-              Pengalaman
-            </div>
+            <div class="exp">Tahun <br /> Pengalaman</div>
           </div>
         </div>
         <div class="boxes">
-          <div class="box">
-            <div class="topic">Laravel</div>
-            <div class="per">90%</div>
+          <div class="box"><div class="topic">Laravel</div><div class="per">90%</div></div>
+          <div class="box"><div class="topic">Flutter</div><div class="per">85%</div></div>
+          <div class="box"><div class="topic">PHP</div><div class="per">95%</div></div>
+          <div class="box"><div class="topic">C++</div><div class="per">90%</div></div>
+          <div class="box"><div class="topic">C#</div><div class="per">80%</div></div>
+          <div class="box"><div class="topic">Python</div><div class="per">85%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pendidikan Saya -->
+  <section class="education" id="education">
+    <div class="content">
+      <div class="title"><span>Pendidikan Saya</span></div>
+      <div class="education-details boxes">
+        <div class="box">
+          <img src="images/edu-univ.jpg" alt="Universitas XYZ" />
+          <div class="topic">S1 Teknik Informatika</div>
+          <p>Universitas XYZ - Lulus tahun 2023. Fokus pada pengembangan perangkat lunak, sistem basis data, dan arsitektur backend.</p>
+          <div class="button">
+            <a href="https://www.univxyz.ac.id" target="_blank"><button>Kunjungi</button></a>
           </div>
-          <div class="box">
-            <div class="topic">Flutter</div>
-            <div class="per">85%</div>
+        </div>
+        <div class="box">
+          <img src="images/edu-course.jpg" alt="Kursus Online" />
+          <div class="topic">Kursus Online Backend</div>
+          <p>Kursus Laravel, RESTful API, dan keamanan backend di Dicoding, Udemy, dan platform lainnya.</p>
+          <div class="button">
+            <a href="https://www.dicoding.com" target="_blank"><button>Kunjungi</button></a>
           </div>
-          <div class="box">
-            <div class="topic">PHP</div>
-            <div class="per">95%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek Saya -->
+  <section class="projects" id="projects">
+    <div class="content">
+      <div class="title"><span>Proyek Saya</span></div>
+      <div class="project-details boxes">
+        <div class="box">
+          <img src="images/project-toko.jpg" alt="Sistem Manajemen Toko" />
+          <div class="topic">Sistem Manajemen Toko</div>
+          <p>Aplikasi Laravel untuk mengelola stok, transaksi, dan laporan penjualan toko.</p>
+          <div class="button">
+            <a href="https://github.com/ridho/toko-management" target="_blank"><button>Kunjungi</button></a>
           </div>
-          <div class="box">
-            <div class="topic">C++</div>
-            <div class="per">90%</div>
+        </div>
+        <div class="box">
+          <img src="images/project-notes.jpg" alt="Aplikasi Catatan Harian" />
+          <div class="topic">Aplikasi Catatan Harian</div>
+          <p>App Flutter untuk mencatat aktivitas harian dan menyimpan ke cloud secara otomatis.</p>
+          <div class="button">
+            <a href="https://play.google.com/store/apps/details?id=catatanharian.app" target="_blank"><button>Kunjungi</button></a>
           </div>
-          <div class="box">
-            <div class="topic">C#</div>
-            <div class="per">80%</div>
-          </div>
-          <div class="box">
-            <div class="topic">Python</div>
-            <div class="per">85%</div>
+        </div>
+        <div class="box">
+          <img src="images/project-api.jpg" alt="API Otentikasi" />
+          <div class="topic">RESTful API Otentikasi</div>
+          <p>API Laravel Passport untuk login dan registrasi aman pada proyek multi-platform.</p>
+          <div class="button">
+            <a href="https://github.com/ridho/auth-api" target="_blank"><button>Kunjungi</button></a>
           </div>
         </div>
       </div>
@@ -131,55 +165,29 @@
     <div class="content">
       <div class="title"><span>Layanan Saya</span></div>
       <div class="boxes">
-        <div class="box">
-          <div class="icon"><i class="fas fa-desktop"></i></div>
-          <div class="topic">Pengembangan Web</div>
-          <p>Saya mengembangkan website dan API backend dengan Laravel dan PHP untuk berbagai kebutuhan bisnis.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-          <div class="topic">Aplikasi Mobile</div>
-          <p>Saya membuat aplikasi Android/iOS menggunakan Flutter yang ringan dan responsif.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fas fa-code"></i></div>
-          <div class="topic">Pemrograman Kustom</div>
-          <p>Pemrograman lanjutan menggunakan C++, C#, dan Python sesuai kebutuhan sistem.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fas fa-server"></i></div>
-          <div class="topic">Manajemen Backend</div>
-          <p>Membuat sistem backend yang scalable dan aman dengan arsitektur yang solid.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fas fa-database"></i></div>
-          <div class="topic">Database</div>
-          <p>Desain dan optimasi database MySQL, PostgreSQL, dan SQLite untuk efisiensi maksimal.</p>
-        </div>
-        <div class="box">
-          <div class="icon"><i class="fas fa-tools"></i></div>
-          <div class="topic">Integrasi Sistem</div>
-          <p>Menghubungkan berbagai layanan API, autentikasi, dan sistem eksternal ke dalam aplikasi.</p>
-        </div>
+        <div class="box"><div class="icon"><i class="fas fa-desktop"></i></div><div class="topic">Pengembangan Web</div><p>Website & API Laravel untuk berbagai kebutuhan bisnis.</p></div>
+        <div class="box"><div class="icon"><i class="fas fa-mobile-alt"></i></div><div class="topic">Aplikasi Mobile</div><p>Aplikasi Android/iOS dengan Flutter yang ringan dan responsif.</p></div>
+        <div class="box"><div class="icon"><i class="fas fa-code"></i></div><div class="topic">Pemrograman Kustom</div><p>Pemrograman lanjut menggunakan C++, C#, dan Python.</p></div>
+        <div class="box"><div class="icon"><i class="fas fa-server"></i></div><div class="topic">Manajemen Backend</div><p>Sistem backend scalable dan aman.</p></div>
+        <div class="box"><div class="icon"><i class="fas fa-database"></i></div><div class="topic">Database</div><p>Desain dan optimasi database MySQL, PostgreSQL, SQLite.</p></div>
+        <div class="box"><div class="icon"><i class="fas fa-tools"></i></div><div class="topic">Integrasi Sistem</div><p>Menghubungkan layanan API dan sistem eksternal.</p></div>
       </div>
     </div>
   </section>
 
-<!-- Kontak -->
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Hubungi Saya</span></div>
-    <div class="text">
-      <div class="topic">Punya Proyek atau Ide?</div>
-      <p>Jika Anda memiliki proyek, ide, atau kebutuhan dalam pengembangan backend dan aplikasi, silakan hubungi saya. Saya siap membantu mewujudkan solusi terbaik untuk Anda.</p>
-      <div class="button">
-        <a href="https://wa.me/6281311685803" target="_blank">
-          <button>Hubungi Sekarang</button>
-        </a>
+  <!-- Kontak -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Hubungi Saya</span></div>
+      <div class="text">
+        <div class="topic">Punya Proyek atau Ide?</div>
+        <p>Jika Anda memiliki proyek atau ide dalam pengembangan backend atau aplikasi, silakan hubungi saya. Saya siap membantu Anda.</p>
+        <div class="button">
+          <a href="https://wa.me/6281311685803" target="_blank"><button>Hubungi Sekarang</button></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -190,5 +198,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
