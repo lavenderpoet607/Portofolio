@@ -160,43 +160,34 @@
 
       <!-- Project 1 -->
       <div class="box">
-        <img src="images/project-toko.jpg" alt="Sistem Manajemen Toko" class="preview-img" />
+        <img src="images/project-toko.jpg" alt="Sistem Manajemen Toko" class="preview-img" onclick="showPreview(this)" />
         <div class="topic">Sistem Manajemen Toko</div>
         <p>Aplikasi Laravel untuk mengelola stok, transaksi, dan laporan penjualan toko.</p>
-        <div class="button">
-          <a href="images/project-toko.jpg" target="_blank">
-            <button>Lihat Gambar</button>
-          </a>
-        </div>
       </div>
 
       <!-- Project 2 -->
       <div class="box">
-        <img src="images/project-notes.jpg" alt="Aplikasi Catatan Harian" class="preview-img" />
+        <img src="images/project-notes.jpg" alt="Aplikasi Catatan Harian" class="preview-img" onclick="showPreview(this)" />
         <div class="topic">Aplikasi Catatan Harian</div>
         <p>App Flutter untuk mencatat aktivitas harian dan menyimpan ke cloud secara otomatis.</p>
-        <div class="button">
-          <a href="images/project-notes.jpg" target="_blank">
-            <button>Lihat Gambar</button>
-          </a>
-        </div>
       </div>
 
       <!-- Project 3 -->
       <div class="box">
-        <img src="images/project-api.jpg" alt="API Otentikasi" class="preview-img" />
+        <img src="images/project-api.jpg" alt="API Otentikasi" class="preview-img" onclick="showPreview(this)" />
         <div class="topic">RESTful API Otentikasi</div>
         <p>API Laravel Passport untuk login dan registrasi aman pada proyek multi-platform.</p>
-        <div class="button">
-          <a href="images/project-api.jpg" target="_blank">
-            <button>Lihat Gambar</button>
-          </a>
-        </div>
       </div>
 
     </div>
   </div>
 </section>
+
+<!-- Modal Preview -->
+<div id="imgModal" class="img-modal">
+  <span class="close" onclick="closePreview()">&times;</span>
+  <img class="modal-content" id="modalImg" />
+</div>
 
   <!-- Layanan Saya -->
   <section class="services" id="services">
