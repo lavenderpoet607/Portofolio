@@ -44,3 +44,32 @@ let navLinks = document.querySelectorAll(".menu li a");
 navLinks.forEach((link) => {
   link.addEventListener("click", hideNavMenu);
 });
+
+// ==== Gambar Preview Modal ====
+function showPreview(img) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+function closePreview() {
+  document.getElementById("imgModal").style.display = "none";
+}
+
+// Tutup modal jika klik di luar gambar
+window.onclick = function (event) {
+  const modal = document.getElementById("imgModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+
+  // Tetap jalankan fungsi scroll (untuk sticky nav)
+  if (document.documentElement.scrollTop > 20) {
+    nav.classList.add("sticky");
+    scrollBtn.style.display = "block";
+  } else {
+    nav.classList.remove("sticky");
+    scrollBtn.style.display = "none";
+  }
+};
