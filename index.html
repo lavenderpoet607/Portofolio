@@ -1,65 +1,194 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio RIDHO DIBAJA TAWANG</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Portofolio Ridho | Backend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1 class="fade-in">RIDHO DIBAJA TAWANG</h1>
-      <p class="fade-in delay-1">Web Developer | UI/UX Enthusiast | Tech Explorer</p>
+  <!-- Tombol scroll ke atas -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <!-- Navigasi -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portofolio.</a></div>
+      <ul class="menu">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/ridho.tawang.3?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sbngsampemerauke?igsh=MWVuM25lM3MyamwwdA=="><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-  </header>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
 
-  <section class="about section">
-    <h2>📌 Tentang Saya</h2>
-    <p>Saya adalah seorang pengembang web dengan minat besar pada teknologi, desain antarmuka, dan pengembangan aplikasi modern. Fokus saya adalah menciptakan pengalaman digital yang cepat, interaktif, dan user-friendly.</p>
+  <!-- Beranda -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Halo,</div>
+        <div class="text-two">Saya Ridho Dibaja Tawang</div>
+        <div class="text-three">Backend Developer</div>
+        <div class="text-four">Dari Indonesia</div>
+      </div>
+      <div class="button">
+        <button>IDN</button>
+      </div>
+    </div>
   </section>
 
-  <section class="info section">
-    <h2>🧾 Data Diri</h2>
-    <ul>
-      <li><strong>Nama:</strong> RIDHO DIBAJA TAWANG</li>
-      <li><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 15 Juni 2004</li>
-      <li><strong>Alamat:</strong> Jl. KebonSayur 1, RT 06, RW 15</li>
-      <li><strong>Email:</strong> <a href="mailto:ridhotawang7@gmail.com">ridhotawang7@gmail.com</a></li>
-      <li><strong>Telepon:</strong> <a href="https://wa.me/6281311685803" target="_blank">6281311685803</a></li>
-    </ul>
+  <!-- Tentang Saya -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>Tentang Saya</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="Foto Profil" />
+        </div>
+        <div class="right">
+          <div class="topic">Saya Seorang Backend Developer</div>
+          <p>
+            Saya adalah seorang developer backend yang berpengalaman dalam membangun sistem dan API menggunakan Laravel, serta mengembangkan aplikasi mobile dengan Flutter. Saya juga memiliki kemampuan yang handal dalam berbagai bahasa pemrograman, termasuk C++, C#, Python, dan PHP.
+            <br><br>
+            Fokus utama saya adalah menciptakan solusi yang efisien, aman, dan dapat dengan mudah dikembangkan lebih lanjut. Dengan pendekatan yang terstruktur dan profesional, saya siap membantu menyelesaikan berbagai tantangan teknis dalam dunia pengembangan perangkat lunak.
+          </p>
+          <div class="button">
+            <button onclick="window.location.href='cv-ridho.pdf'">Unduh CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="skills section">
-    <h2>🛠️ Keahlian</h2>
-    <ul class="skills-list">
-      <li>HTML, CSS, JavaScript</li>
-      <li>React & Vue</li>
-      <li>Laravel & PHP</li>
-      <li>UI/UX Design (Figma)</li>
-      <li>Database (MySQL, Firebase)</li>
-      <li>C++, C#</li>
-    </ul>
+  <!-- Keahlian Saya -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>Keahlian Saya</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Keahlian Mencerminkan Pengalaman</div>
+          <p>
+            Dengan pengalaman bertahun-tahun di bidang pengembangan backend dan aplikasi, saya terbiasa menangani berbagai proyek mulai dari website sederhana hingga sistem berskala besar. Saya selalu berusaha mengikuti perkembangan teknologi terbaru untuk memberikan hasil terbaik.
+          </p>
+          <div class="experience">
+            <div class="num">5</div>
+            <div class="exp">
+              Tahun <br />
+              Pengalaman
+            </div>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">Laravel</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Flutter</div>
+            <div class="per">85%</div>
+          </div>
+          <div class="box">
+            <div class="topic">PHP</div>
+            <div class="per">95%</div>
+          </div>
+          <div class="box">
+            <div class="topic">C++</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">C#</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Python</div>
+            <div class="per">85%</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="education section">
-    <h2>🎓 Pendidikan</h2>
-    <ul>
-      <li>SMA GIS (GLOBAL ISLAMIC SCHOOL) (Rekayasa Perangkat Lunak)</li>
-      <li>Universitas IDN - S1 Teknik Informatika</li>
-    </ul>
+  <!-- Layanan Saya -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>Layanan Saya</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon"><i class="fas fa-desktop"></i></div>
+          <div class="topic">Pengembangan Web</div>
+          <p>Saya mengembangkan website dan API backend dengan Laravel dan PHP untuk berbagai kebutuhan bisnis.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="topic">Aplikasi Mobile</div>
+          <p>Saya membuat aplikasi Android/iOS menggunakan Flutter yang ringan dan responsif.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <div class="topic">Pemrograman Kustom</div>
+          <p>Pemrograman lanjutan menggunakan C++, C#, dan Python sesuai kebutuhan sistem.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-server"></i></div>
+          <div class="topic">Manajemen Backend</div>
+          <p>Membuat sistem backend yang scalable dan aman dengan arsitektur yang solid.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-database"></i></div>
+          <div class="topic">Database</div>
+          <p>Desain dan optimasi database MySQL, PostgreSQL, dan SQLite untuk efisiensi maksimal.</p>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-tools"></i></div>
+          <div class="topic">Integrasi Sistem</div>
+          <p>Menghubungkan berbagai layanan API, autentikasi, dan sistem eksternal ke dalam aplikasi.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="contact section">
-    <h2>📬 Kontak</h2>
-    <p>Email: <a href="mailto:ridhotawang7@gmail.com">ridhotawang7@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/sbngsampemerauke" target="_blank">@sbngsampemerauke</a></p>
-  </section>
+<!-- Kontak -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Hubungi Saya</span></div>
+    <div class="text">
+      <div class="topic">Punya Proyek atau Ide?</div>
+      <p>Jika Anda memiliki proyek, ide, atau kebutuhan dalam pengembangan backend dan aplikasi, silakan hubungi saya. Saya siap membantu mewujudkan solusi terbaik untuk Anda.</p>
+      <div class="button">
+        <a href="https://wa.me/6281311685803" target="_blank">
+          <button>Hubungi Sekarang</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 RIDHO DIBAJA TAWANG. All Rights Reserved.</p>
+    <div class="text">
+      <span>Dibuat oleh <a href="#">Ridho Dibaja Tawang</a> | &copy; 2025 Semua Hak Dilindungi</span>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
